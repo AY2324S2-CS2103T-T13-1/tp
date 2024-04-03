@@ -1,0 +1,106 @@
+@startuml
+!include style.puml
+skinparam ArrowFontStyle plain
+
+box Logic LOGIC_COLOR_T1
+participant ":LogicManager" as LogicManager LOGIC_COLOR
+participant ":AddressBookParser" as AddressBookParser LOGIC_COLOR
+participant ":EditAttendanceRecordCommandParser" as EditAttendanceRecordCommandParser LOGIC_COLOR
+participant "attendance:EditAttendanceRecordCommand" as EditAttendanceRecordCommand LOGIC_COLOR
+participant "CommandException" as CommandException LOGIC_COLOR
+participant "r:CommandResult" as CommandResult LOGIC_COLOR
+end box
+
+box Model MODEL_COLOR_T1
+participant "m:Model" as Model MODEL_COLOR
+end box
+
+box Storage STORAGE_COLOR_T1
+participant "s:Storage" as Storage STORAGE_COLOR
+end box
+
+[-> LogicManager : execute"edita 1,2 ar/06-06-2024 st/0"
+activate LogicManager
+
+LogicManager -> AddressBookParser : parseCommand"edita 1,2 ar/06-06-2024 st/0"
+activate AddressBookParser
+
+create EditAttendanceRecordCommandParser
+AddressBookParser -> EditAttendanceRecordCommandParser
+activate EditAttendanceRecordCommandParser
+
+EditAttendanceRecordCommandParser --> AddressBookParser
+deactivate EditAttendanceRecordCommandParser
+
+AddressBookParser -> EditAttendanceRecordCommandParser : parse("1,2 ar/06-06-2024 st/0")
+activate EditAttendanceRecordCommandParser
+
+create EditAttendanceRecordCommand
+EditAttendanceRecordCommandParser -> EditAttendanceRecordCommand
+activate EditAttendanceRecordCommand
+
+EditAttendanceRecordCommand --> EditAttendanceRecordCommandParser :
+deactivate EditAttendanceRecordCommand
+
+EditAttendanceRecordCommandParser --> AddressBookParser : attendance
+deactivate EditAttendanceRecordCommandParser
+'Hidden arrow to position the destroy marker below the end of the activation bar.
+EditAttendanceRecordCommandParser -[hidden]-> AddressBookParser
+destroy EditAttendanceRecordCommandParser
+
+AddressBookParser --> LogicManager : attendance
+deactivate AddressBookParser
+
+LogicManager -> EditAttendanceRecordCommand : execute(m)
+activate EditAttendanceRecordCommand
+
+EditAttendanceRecordCommand -> Model :  getFilteredPersonList()
+activate Model
+
+Model --> EditAttendanceRecordCommand : list of person
+deactivate Model
+
+opt Attendance date is not inside the person's list of attendances or any invalid index of person
+    create CommandException
+    EditAttendanceRecordCommand -> CommandException : CommandException(MESSAGE_DUPLICATE_DATE_ATTENDANCE)
+    activate CommandException
+
+    CommandException -> LogicManager : CommandException
+    LogicManager -> LogicManager : Display error message
+end
+
+loop all the selected row of the person based on the selected index
+    EditAttendanceRecordCommand -> Model : setPerson(person)
+    activate Model
+
+    Model -> Storage : saveAddressBook()
+    activate Storage
+
+    Storage --> Model
+    deactivate Storage
+
+    Model --> EditAttendanceRecordCommand
+    deactivate Model
+
+    EditAttendanceRecordCommand -> Model : updateFilteredPersonList(...)
+    activate Model
+
+    Model --> EditAttendanceRecordCommand
+    deactivate Model
+end
+
+deactivate Model
+
+create CommandResult
+EditAttendanceRecordCommand -> CommandResult
+activate CommandResult
+
+CommandResult --> EditAttendanceRecordCommand
+deactivate CommandResult
+
+EditAttendanceRecordCommand --> LogicManager : r
+deactivate EditAttendanceRecordCommand
+
+[<--LogicManager
+deactivate LogicManager
+@enduml

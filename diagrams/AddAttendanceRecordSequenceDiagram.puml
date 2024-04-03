@@ -1,28 +1,106 @@
 @startuml
-'https://plantuml.com/sequence-diagram
+!include style.puml
+skinparam ArrowFontStyle plain
 
-[-> UI : "attendance ar/06-06-2024")
-activate UI
+box Logic LOGIC_COLOR_T1
+participant ":LogicManager" as LogicManager LOGIC_COLOR
+participant ":AddressBookParser" as AddressBookParser LOGIC_COLOR
+participant ":AddAttendanceRecordCommandParser" as AddAttendanceRecordCommandParser LOGIC_COLOR
+participant "attendance:AddAttendanceRecordCommand" as AddAttendanceRecordCommand LOGIC_COLOR
+participant "CommandException" as CommandException LOGIC_COLOR
+participant "r:CommandResult" as CommandResult LOGIC_COLOR
+end box
 
-UI -> Logic : execute("attendance ar/06-06-2024")
-activate Logic
+box Model MODEL_COLOR_T1
+participant "m:Model" as Model MODEL_COLOR
+end box
 
-Logic -> Model : getFilteredPersonList()
+box Storage STORAGE_COLOR_T1
+participant "s:Storage" as Storage STORAGE_COLOR
+end box
+
+[-> LogicManager : execute"adda ar/06-06-2024"
+activate LogicManager
+
+LogicManager -> AddressBookParser : parseCommand"adda ar/06-06-2024"
+activate AddressBookParser
+
+create AddAttendanceRecordCommandParser
+AddressBookParser -> AddAttendanceRecordCommandParser
+activate AddAttendanceRecordCommandParser
+
+AddAttendanceRecordCommandParser --> AddressBookParser
+deactivate AddAttendanceRecordCommandParser
+
+AddressBookParser -> AddAttendanceRecordCommandParser : parse("ar/06-06-2024")
+activate AddAttendanceRecordCommandParser
+
+create AddAttendanceRecordCommand
+AddAttendanceRecordCommandParser -> AddAttendanceRecordCommand
+activate AddAttendanceRecordCommand
+
+AddAttendanceRecordCommand --> AddAttendanceRecordCommandParser :
+deactivate AddAttendanceRecordCommand
+
+AddAttendanceRecordCommandParser --> AddressBookParser : attendance
+deactivate AddAttendanceRecordCommandParser
+'Hidden arrow to position the destroy marker below the end of the activation bar.
+AddAttendanceRecordCommandParser -[hidden]-> AddressBookParser
+destroy AddAttendanceRecordCommandParser
+
+AddressBookParser --> LogicManager : attendance
+deactivate AddressBookParser
+
+LogicManager -> AddAttendanceRecordCommand : execute(m)
+activate AddAttendanceRecordCommand
+
+AddAttendanceRecordCommand -> Model :  getFilteredPersonList()
 activate Model
 
-Model --> Logic : list of person
-loop every row in the list of person
-Logic -> Model : setPerson(person)
-
-Logic -> Model : updateFilteredPersonList(...)
-end
+Model --> AddAttendanceRecordCommand : list of person
 deactivate Model
 
-Logic -> Storage: saveClassBook(classBook)
-activate Storage
+opt Attendance date is already inside the person's list of attendances
+    create CommandException
+    AddAttendanceRecordCommand -> CommandException : CommandException(MESSAGE_DUPLICATE_DATE_ATTENDANCE)
+    activate CommandException
 
-Storage -> Storage : save to file
-activate Storage
-deactivate Storage
+    CommandException -> LogicManager : CommandException
+    LogicManager -> LogicManager : Display error message
+end
 
+loop every row in the list of person
+    AddAttendanceRecordCommand -> Model : setPerson(person)
+    activate Model
+
+    Model -> Storage : saveAddressBook()
+    activate Storage
+
+    Storage --> Model
+    deactivate Storage
+
+    Model --> AddAttendanceRecordCommand
+    deactivate Model
+
+    AddAttendanceRecordCommand -> Model : updateFilteredPersonList(...)
+    activate Model
+
+    Model --> AddAttendanceRecordCommand
+    deactivate Model
+end
+
+deactivate Model
+
+create CommandResult
+AddAttendanceRecordCommand -> CommandResult
+activate CommandResult
+
+CommandResult --> AddAttendanceRecordCommand
+deactivate CommandResult
+
+AddAttendanceRecordCommand --> LogicManager : r
+deactivate AddAttendanceRecordCommand
+
+[<--LogicManager
+deactivate LogicManager
 @enduml
