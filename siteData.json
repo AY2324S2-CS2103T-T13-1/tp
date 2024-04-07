@@ -111,6 +111,7 @@
       "title": "User Guide",
       "headings": {
         "mustvas-user-guide": "MustVas User Guide",
+        "table-of-contents": "Table Of Contents",
         "quick-start": "Quick start",
         "features": "Features",
         "viewing-help-help": "Viewing help : help",
@@ -126,7 +127,7 @@
         "listing-a-class-to-view-list": "Listing a class to view : list",
         "locating-students-by-name-find": "Locating students by name : find",
         "deleting-a-student-delete": "Deleting a student : delete",
-        "removing-a-class-rm": "Removing a class: rm",
+        "removing-a-class-rm": "Removing a class : rm",
         "clearing-all-entries-clear": "Clearing all entries : clear",
         "exiting-the-program-exit": "Exiting the program : exit",
         "saving-the-data": "Saving the data",
