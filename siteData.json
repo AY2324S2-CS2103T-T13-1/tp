@@ -69,6 +69,7 @@
         "use-case-delete-a-student-from-a-class-uc-06": "Use case: Delete a student from a class (UC-06)",
         "use-case-add-attendance-record-for-a-class-of-students-uc-07": "Use case: Add attendance record for a class of students (UC-07)",
         "use-case-add-description-about-a-student-uc-08": "Use case: Add description about a student (UC-08)",
+        "use-case-remove-a-class-uc-08": "Use case: Remove a class (UC-08)",
         "non-functional-requirements": "Non-Functional Requirements",
         "glossary": "Glossary",
         "appendix-instructions-for-manual-testing": "Appendix: Instructions for manual testing",
