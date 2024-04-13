@@ -112,10 +112,12 @@
       "title": "User Guide",
       "headings": {
         "mustvas-user-guide": "MustVas User Guide",
+        "welcome-to-mustvas": "Welcome to MustVas ✋",
         "table-of-contents": "Table Of Contents",
         "quick-start": "Quick start",
         "prefixes": "Prefixes:",
         "features": "Features",
+        "prefixes-2": "Prefixes:",
         "viewing-help-help": "Viewing help : help",
         "creating-a-class-create": "Creating a class : create",
         "removing-a-class-rm": "Removing a class : rm",
