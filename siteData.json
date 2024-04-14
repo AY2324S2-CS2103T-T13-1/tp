@@ -82,7 +82,9 @@
         "glossary": "Glossary",
         "appendix-instructions-for-manual-testing": "Appendix: Instructions for manual testing",
         "launch-and-shutdown": "Launch and shutdown",
+        "viewing-the-classes": "Viewing the classes",
         "selecting-a-class": "Selecting a class",
+        "removing-a-class": "Removing a class",
         "deleting-a-person": "Deleting a person",
         "adding-a-description": "Adding a description",
         "saving-data": "Saving data"
