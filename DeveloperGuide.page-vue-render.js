@@ -464,7 +464,7 @@ with(this){return _c('ol',[_c('li',[_v("Should work on any "),_c('em',[_v("mains
 with(this){return _c('h3',{attrs:{"id":"glossary"}},[_v("Glossary"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#glossary","onclick":"event.stopPropagation()"}})])}
 },function anonymous(
 ) {
-with(this){return _c('ul',[_c('li',[_c('strong',[_v("Mainstream OS")]),_v(": Windows, Linux, Unix, MacOS")]),_v(" "),_c('li',[_c('strong',[_v("Private contact detail")]),_v(": A contact detail that is not meant to be shared with others")]),_v(" "),_c('li',[_c('strong',[_v("Json File")]),_v(": A file to store the data used in the program")])])}
+with(this){return _c('ul',[_c('li',[_c('strong',[_v("Mainstream OS")]),_v(": Windows, Linux, Unix, MacOS")]),_v(" "),_c('li',[_c('strong',[_v("Json File")]),_v(": A file to store the data used in the program")]),_v(" "),_c('li',[_c('strong',[_v("MSS")]),_v(": Main Success Scenario which outlines the steps that users take when using the product in various scenarios")]),_v(" "),_c('li',[_c('strong',[_v("ClassBook")]),_v(": List of classes")]),_v(" "),_c('li',[_c('strong',[_v("StudentBook")]),_v(": List of students in individual classes")])])}
 },function anonymous(
 ) {
 with(this){return _c('h2',{attrs:{"id":"appendix-instructions-for-manual-testing"}},[_c('strong',[_v("Appendix: Instructions for manual testing")]),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#appendix-instructions-for-manual-testing","onclick":"event.stopPropagation()"}})])}
@@ -494,6 +494,6 @@ with(this){return _c('h3',{attrs:{"id":"saving-data"}},[_v("Saving data"),_c('a'
 with(this){return _c('ol',[_c('li',[_c('p',[_v("Dealing with missing/corrupted data files")]),_v(" "),_c('ol',[_c('li',[_v("A missing data file of a StudentBook may occur if user accidentally deletes the "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v(".json")]),_v(" file of the class. "),_c('br'),_v("\nA corrupted data file may occur if user accidentally edits the "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v(".json")]),_v(" files manually and inputs invalid data.\nExpected: All data from that missing/corrupted file is wiped. A new "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("classbook.json")]),_v(" or new "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("[class].json")]),_v(" will be created when program runs again.")])])])])}
 },function anonymous(
 ) {
-with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.4.0")]),_v(", generated on Mon, 15 Apr 2024, 1:11:26 GMT+8]")])])])}
+with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.4.0")]),_v(", generated on Mon, 15 Apr 2024, 1:13:14 GMT+8]")])])])}
 }];
   
