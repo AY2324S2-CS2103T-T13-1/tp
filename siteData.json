@@ -52,6 +52,8 @@
         "implementation": "Implementation",
         "create-class-feature": "Create Class feature",
         "select-class-feature": "Select Class feature",
+        "add-feature": "Add feature",
+        "edit-feature": "Edit feature",
         "add-attendance-record-feature": "Add attendance record feature",
         "edit-attendance-record-feature": "Edit attendance record feature",
         "delete-attendance-record-feature": "Delete attendance record feature",
