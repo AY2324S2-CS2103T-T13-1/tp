@@ -356,7 +356,7 @@ with(this){return _c('h3',{attrs:{"id":"use-case-add-a-student-to-a-class-uc-05"
 with(this){return _c('p',[_c('strong',[_v("MSS")])])}
 },function anonymous(
 ) {
-with(this){return _c('ol',[_c('li',[_v("User enters the program (MustVas).")]),_v(" "),_c('li',[_v("User "),_c('a',{attrs:{"href":"#use-case-select-a-class-of-students-to-manage-uc-04"}},[_v("selects a class (UC-03)")]),_v(".")]),_v(" "),_c('li',[_v("User then inputs the command 'add' to check how to enter command.")]),_v(" "),_c('li',[_v("User then inputs details for the command 'add'.")]),_v(" "),_c('li',[_v("MustVas then adds the student to the selected class and displays all relevant details in the console.")])])}
+with(this){return _c('ol',[_c('li',[_v("User enters the program (MustVas).")]),_v(" "),_c('li',[_v("User "),_c('a',{attrs:{"href":"#use-case-select-a-class-of-students-to-manage-uc-04"}},[_v("selects a class (UC-04)")]),_v(".")]),_v(" "),_c('li',[_v("User then inputs the command 'add' to check how to enter command.")]),_v(" "),_c('li',[_v("User then inputs details for the command 'add'.")]),_v(" "),_c('li',[_v("MustVas then adds the student to the selected class and displays all relevant details in the console.")])])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('strong',[_v("Extensions")])])}
@@ -371,7 +371,7 @@ with(this){return _c('h3',{attrs:{"id":"use-case-delete-a-student-from-a-class-u
 with(this){return _c('p',[_c('strong',[_v("MSS")])])}
 },function anonymous(
 ) {
-with(this){return _c('ol',[_c('li',[_v("User enters the program (MustVas).")]),_v(" "),_c('li',[_v("User "),_c('a',{attrs:{"href":"#use-case-select-a-class-of-students-to-manage-uc-04"}},[_v("selects a class (UC-03)")]),_v(".")]),_v(" "),_c('li',[_v("User inputs the command to delete a student record from selected class.")]),_v(" "),_c('li',[_v("MustVas confirms the deletion and removes the student from the selected class.")])])}
+with(this){return _c('ol',[_c('li',[_v("User enters the program (MustVas).")]),_v(" "),_c('li',[_v("User "),_c('a',{attrs:{"href":"#use-case-select-a-class-of-students-to-manage-uc-04"}},[_v("selects a class (UC-04)")]),_v(".")]),_v(" "),_c('li',[_v("User inputs the command to delete a student record from selected class.")]),_v(" "),_c('li',[_v("MustVas confirms the deletion and removes the student from the selected class.")])])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('strong',[_v("Extensions")])])}
@@ -386,7 +386,7 @@ with(this){return _c('h3',{attrs:{"id":"use-case-add-attendance-record-for-a-cla
 with(this){return _c('p',[_c('strong',[_v("MSS")])])}
 },function anonymous(
 ) {
-with(this){return _c('ol',[_c('li',[_v("User enters the program (MustVas).")]),_v(" "),_c('li',[_v("User "),_c('a',{attrs:{"href":"#use-case-select-a-class-of-students-to-manage-uc-04"}},[_v("selects a class (UC-03)")]),_v(".")]),_v(" "),_c('li',[_v("User inputs the command to add an attendance record for all students.")]),_v(" "),_c('li',[_v("MustVas confirms the added attendance, stores the attendance records for all students in the class, and show the updated attendance records.")])])}
+with(this){return _c('ol',[_c('li',[_v("User enters the program (MustVas).")]),_v(" "),_c('li',[_v("User "),_c('a',{attrs:{"href":"#use-case-select-a-class-of-students-to-manage-uc-04"}},[_v("selects a class (UC-04)")]),_v(".")]),_v(" "),_c('li',[_v("User inputs the command to add an attendance record for all students.")]),_v(" "),_c('li',[_v("MustVas confirms the added attendance, stores the attendance records for all students in the class, and show the updated attendance records.")])])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('strong',[_v("Extensions")])])}
@@ -401,7 +401,7 @@ with(this){return _c('h3',{attrs:{"id":"use-case-edit-attendance-record-for-some
 with(this){return _c('p',[_c('strong',[_v("MSS")])])}
 },function anonymous(
 ) {
-with(this){return _c('ol',[_c('li',[_v("User enters the program (MustVas).")]),_v(" "),_c('li',[_v("MustVas shows the layout of the program.")]),_v(" "),_c('li',[_v("User "),_c('a',{attrs:{"href":"#use-case-select-a-class-of-students-to-manage-uc-04"}},[_v("selects a class (UC-03)")]),_v(".")]),_v(" "),_c('li',[_v("User inputs the command to edit an attendance record for some students.")]),_v(" "),_c('li',[_v("MustVas confirms the edited attendance records, stores the attendance records for the selected students in the class, and show the updated attendance records.")])])}
+with(this){return _c('ol',[_c('li',[_v("User enters the program (MustVas).")]),_v(" "),_c('li',[_v("MustVas shows the layout of the program.")]),_v(" "),_c('li',[_v("User "),_c('a',{attrs:{"href":"#use-case-select-a-class-of-students-to-manage-uc-04"}},[_v("selects a class (UC-04)")]),_v(".")]),_v(" "),_c('li',[_v("User inputs the command to edit an attendance record for some students.")]),_v(" "),_c('li',[_v("MustVas confirms the edited attendance records, stores the attendance records for the selected students in the class, and show the updated attendance records.")])])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('strong',[_v("Extensions")])])}
@@ -416,7 +416,7 @@ with(this){return _c('h3',{attrs:{"id":"use-case-delete-attendance-record-for-a-
 with(this){return _c('p',[_c('strong',[_v("MSS")])])}
 },function anonymous(
 ) {
-with(this){return _c('ol',[_c('li',[_v("User enters the program (MustVas).")]),_v(" "),_c('li',[_v("MustVas shows the layout of the program.")]),_v(" "),_c('li',[_v("User "),_c('a',{attrs:{"href":"#use-case-select-a-class-of-students-to-manage-uc-04"}},[_v("selects a class (UC-03)")]),_v(".")]),_v(" "),_c('li',[_v("User inputs the command to delete an attendance record for all students.")]),_v(" "),_c('li',[_v("MustVas confirms the deleted attendance records, stores the existing attendance records for all students in the class, and show the updated attendance records.")])])}
+with(this){return _c('ol',[_c('li',[_v("User enters the program (MustVas).")]),_v(" "),_c('li',[_v("MustVas shows the layout of the program.")]),_v(" "),_c('li',[_v("User "),_c('a',{attrs:{"href":"#use-case-select-a-class-of-students-to-manage-uc-04"}},[_v("selects a class (UC-04)")]),_v(".")]),_v(" "),_c('li',[_v("User inputs the command to delete an attendance record for all students.")]),_v(" "),_c('li',[_v("MustVas confirms the deleted attendance records, stores the existing attendance records for all students in the class, and show the updated attendance records.")])])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('strong',[_v("Extensions")])])}
@@ -431,7 +431,7 @@ with(this){return _c('h3',{attrs:{"id":"use-case-add-description-about-a-student
 with(this){return _c('p',[_c('strong',[_v("MSS")])])}
 },function anonymous(
 ) {
-with(this){return _c('ol',[_c('li',[_v("User enters the program (MustVas).")]),_v(" "),_c('li',[_v("User "),_c('a',{attrs:{"href":"#use-case-select-a-class-of-students-to-manage-uc-04"}},[_v("selects a class (UC-03)")]),_v(".")]),_v(" "),_c('li',[_v("User inputs the command to add description to a student.")]),_v(" "),_c('li',[_v("User inputs the description details.")]),_v(" "),_c('li',[_v("MustVas saves the description for the selected student.")])])}
+with(this){return _c('ol',[_c('li',[_v("User enters the program (MustVas).")]),_v(" "),_c('li',[_v("User "),_c('a',{attrs:{"href":"#use-case-select-a-class-of-students-to-manage-uc-04"}},[_v("selects a class (UC-04)")]),_v(".")]),_v(" "),_c('li',[_v("User inputs the command to add description to a student.")]),_v(" "),_c('li',[_v("User inputs the description details.")]),_v(" "),_c('li',[_v("MustVas saves the description for the selected student.")])])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('strong',[_v("Extensions")])])}
@@ -446,7 +446,7 @@ with(this){return _c('h3',{attrs:{"id":"use-case-remove-a-class-uc-11"}},[_v("Us
 with(this){return _c('p',[_c('strong',[_v("MSS")])])}
 },function anonymous(
 ) {
-with(this){return _c('ol',[_c('li',[_v("User enters the program (MustVas).")]),_v(" "),_c('li',[_v("User User request to "),_c('a',{attrs:{"href":"#use-case-view-list-of-classes-uc-03"}},[_v("view the list of classes")]),_v(".")]),_v(" "),_c('li',[_v("User inputs the command to remove a class.")]),_v(" "),_c('li',[_v("User selects the class to be removed from the list.")]),_v(" "),_c('li',[_v("MustVas removes the selected class and all associated data from the system.")])])}
+with(this){return _c('ol',[_c('li',[_v("User enters the program (MustVas).")]),_v(" "),_c('li',[_v("User inputs command to "),_c('a',{attrs:{"href":"#use-case-view-list-of-classes-uc-03"}},[_v("view the list of classes")]),_v(".")]),_v(" "),_c('li',[_v("User inputs the command to remove a class.")]),_v(" "),_c('li',[_v("User selects the class to be removed from the list.")]),_v(" "),_c('li',[_v("MustVas removes the selected class and all associated data from the system.")])])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('strong',[_v("Extensions")])])}
@@ -512,6 +512,6 @@ with(this){return _c('h3',{attrs:{"id":"saving-data"}},[_v("Saving data"),_c('a'
 with(this){return _c('ol',[_c('li',[_c('p',[_v("Dealing with missing/corrupted data files")]),_v(" "),_c('ol',[_c('li',[_v("A missing data file of a StudentBook may occur if user accidentally deletes the "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v(".json")]),_v(" file of the class. "),_c('br'),_v("\nA corrupted data file may occur if user accidentally edits the "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v(".json")]),_v(" files manually and inputs invalid data."),_c('br'),_v("\nExpected: All data from that missing/corrupted file is wiped. A new "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("classbook.json")]),_v(" or new "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("[class].json")]),_v(" will be created when program runs again.")])])])])}
 },function anonymous(
 ) {
-with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.4.0")]),_v(", generated on Mon, 15 Apr 2024, 2:17:51 GMT+8]")])])])}
+with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.4.0")]),_v(", generated on Mon, 15 Apr 2024, 2:20:59 GMT+8]")])])])}
 }];
   
