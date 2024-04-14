@@ -83,7 +83,7 @@ with(this){return _c('ul',[_c('li',[_v("Deletes the class at the specified "),_c
 with(this){return _c('div',{staticClass:"reminder",staticStyle:{"background-color":"#f7f7f7","border-left":"6px solid #5bc0de","padding":"10px","margin-bottom":"20px"},attrs:{"markdown":"1"}},[_c('h3',{attrs:{"id":"index-information"}},[_v("💡 "),_c('span',{staticStyle:{"color":"#5bc0de"}},[_v("Index information")]),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#index-information","onclick":"event.stopPropagation()"}})]),_v(" "),_c('p',[_v("The index refers to the index number shown in the displayed class list. (e.g. CS2101 is index 1)")]),_v(" "),_c('ul',[_c('li',[_v("The index "),_c('strong',[_v("must be a positive integer")]),_v(" (1, 2, 3, …​)")])])])}
 },function anonymous(
 ) {
-with(this){return _c('p',[_c('a',{attrs:{"href":"/tp/images/RemoveClassResult.png","target":"_self"}},[_c('img',{staticClass:"img-fluid",attrs:{"src":"/tp/images/RemoveClassResult.png","alt":"RemoveClass"}})])])}
+with(this){return _c('p',[_c('a',{attrs:{"href":"/tp/images/RemoveClassResult.png","target":"_self"}},[_c('img',{staticClass:"img-fluid",attrs:{"src":"/tp/images/RemoveClassResult.png","alt":"<img src=\"images/RemoveClassResult.png\" width=\"450\" height=\"550\">"}})])])}
 },function anonymous(
 ) {
 with(this){return _c('ul',[_c('li',[_v("Removes the class from your ClassBook and entire StudentBook from that class as well, "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("[JAR file location]/data/classbook/[ClassName].json")]),_v(" will be simultaneously deleted.")]),_v(" "),_c('li',[_v("Any classes that are currently selected will be unselected, in order to prevent any accidental modification to your data.")]),_v(" "),_c('li',[_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v(".\\No class selected!")]),_v(" will be displayed on the bottom left.")])])}
@@ -320,6 +320,6 @@ with(this){return _c('div',{staticClass:"table-responsive"},[_c('table',{staticC
 with(this){return _c('h4',{attrs:{"id":"1-not-to-be-confused-with-mustvas-list-command"}},[_c('sup',[_v("1")]),_v(" Not to be confused with MustVas' "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("list")]),_v(" command."),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#1-not-to-be-confused-with-mustvas-list-command","onclick":"event.stopPropagation()"}})])}
 },function anonymous(
 ) {
-with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.4.0")]),_v(", generated on Mon, 15 Apr 2024, 2:20:59 GMT+8]")])])])}
+with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.4.0")]),_v(", generated on Mon, 15 Apr 2024, 2:22:48 GMT+8]")])])])}
 }];
   
