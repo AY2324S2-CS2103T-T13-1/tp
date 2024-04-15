@@ -1,0 +1,20 @@
+@startuml
+skin rose
+skinparam ActivityFontSize 15
+skinparam ArrowFontSize 12
+start
+:User executes EditAttendanceRecordCommand;
+
+'Since the beta syntax does not support placing the condition outside the
+'diamond we place it as the true branch instead.
+if () then ([The selected students do not exist])
+    :Show error message;
+else ([else]))
+if () then ([The selected date does not exist in the current Attendance Records])
+    :Show error message;
+else ([else])
+    :Edit the status of the selected date for the selected students;
+endif
+endif
+stop
+@enduml
