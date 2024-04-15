@@ -290,7 +290,7 @@ with(this){return _c('h3',{attrs:{"id":"use-case-select-a-class-of-students-to-m
 with(this){return _c('p',[_c('strong',[_v("MSS")])])}
 },function anonymous(
 ) {
-with(this){return _c('ol',[_c('li',[_v("User request to "),_c('a',{attrs:{"href":"#use-case-view-list-of-classes-uc-03"}},[_v("view the list of classes")]),_v(".")]),_v(" "),_c('li',[_v("User requests to select a class.")]),_v(" "),_c('li',[_v("MustVas shows the details of the selected class.")])])}
+with(this){return _c('ol',[_c('li',[_v("User request to "),_c('a',{attrs:{"href":"#use-case-view-list-of-classes-uc-03"}},[_v("view the list of classes (UC-03)")]),_v(".")]),_v(" "),_c('li',[_v("User requests to select a class.")]),_v(" "),_c('li',[_v("MustVas shows the details of the selected class.")])])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('strong',[_v("Extensions")])])}
@@ -461,6 +461,6 @@ with(this){return _c('h3',{attrs:{"id":"saving-data"}},[_v("Saving data"),_c('a'
 with(this){return _c('ol',[_c('li',[_c('p',[_v("Dealing with missing/corrupted data files")]),_v(" "),_c('ol',[_c('li',[_v("A missing data file of a StudentBook may occur if user accidentally deletes the "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v(".json")]),_v(" file of the class. "),_c('br'),_v("\nA corrupted data file may occur if user accidentally edits the "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v(".json")]),_v(" files manually and inputs invalid data."),_c('br'),_v("\nExpected: All data from that missing/corrupted file is wiped. A new "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("classbook.json")]),_v(" or new "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("[class].json")]),_v(" will be created when program runs again.")])])])])}
 },function anonymous(
 ) {
-with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.4.0")]),_v(", generated on Mon, 15 Apr 2024, 12:30:21 GMT+8]")])])])}
+with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.4.0")]),_v(", generated on Mon, 15 Apr 2024, 14:00:40 GMT+8]")])])])}
 }];
   
