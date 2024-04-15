@@ -8,7 +8,7 @@ start
 'Since the beta syntax does not support placing the condition outside the
 'diamond we place it as the true branch instead.
 
-if () then ([The new creating class exists in the ClassBook])
+if () then ([The new class exists in the ClassBook])
     :Show error message;
 else ([else])
     :Create new class;

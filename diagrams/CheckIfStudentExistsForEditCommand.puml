@@ -11,7 +11,11 @@ start
 if () then ([The selected student does not exist])
     :Show error message;
 else ([else])
+    if () then ([Duplication of phone, email or student id])
+    :Show error message;
+    else ([else]))
     :Update the information of selected student;
+    endif
 endif
 stop
 @enduml
